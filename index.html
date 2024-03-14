@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+    rel="stylesheet"
+  />
   <style>
+    .poller-one-regular {
+      font-family: "Poller One", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
     .robot {
       position: relative;
       left: 200px;
     }
     .beep {
-      width: 7px;
+      width: 5px;
       height: 0px;
       border: 5px solid transparent;
       border-top: 10px solid #777;
@@ -54,7 +66,10 @@
   <div class="robot">
     <div class="beep"></div>
     <div class="brain"></div>
-    <div class="torso"></div>
+    <div class="torso">
+      <div class="left">j</div>
+      <div class="right">j</div>
+    </div>
     <div class="foot"></div>
   </div>
 </body>
