@@ -12,3 +12,5 @@ Here i'm going to:
 1- CSS positioning in depth.
 2- The idea of "in front of" and "behind"in CSS.
 3- Writing CSS transforms to flip and retate elements.
+Part 3: Creating and Controlling animations with javascript.
+    
