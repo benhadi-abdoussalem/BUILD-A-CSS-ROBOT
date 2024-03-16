@@ -1,64 +1,50 @@
 <!DOCTYPE html>
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+    href="https://fonts.googleapis.com/css?family=Poller+One"
     rel="stylesheet"
+    type="text/css"
   />
-  <style>
-    .poller-one-regular {
-      font-family: "Poller One", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
 
+  <style>
     .robot {
       position: relative;
       left: 200px;
     }
+
     .beep {
       width: 5px;
-      height: 0px;
+      height: 0;
       border: 5px solid transparent;
       border-top: 10px solid #777;
       border-bottom: 80px solid #888;
       position: relative;
       left: 140px;
     }
+
     @keyframes blink {
       50% {
         background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
-        background-size: 75px 150px;
-        height: 150px;
-        width: 150px;
-        border-radius: 60px 60px 10px 10px;
       }
     }
     @-webkit-keyframes blink {
       50% {
         background: -webkit-radial-gradient(circle, red 15%, transparent 40%),
           #cc5;
-        background-size: 75px 150px;
-        height: 150px;
-        width: 150px;
-        border-radius: 60px 60px 10px 10px;
       }
     }
     @-moz-keyframes blink {
       50% {
         background: -moz-radial-gradient(circle, red 15%, transparent 40%), #cc5;
-        background-size: 75px 150px;
-        height: 150px;
-        width: 150px;
-        border-radius: 60px 60px 10px 10px;
       }
     }
-    .brain {
+    .laser {
       animation: blink 0.5s infinite;
       -webkit-animation: blink 0.5s infinite;
       -moz-animation: blink 0.5s infinite;
+    }
+    .brain {
       background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
       background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5;
       background: -webkit-radial-gradient(circle, white 15%, transparent 40%),
@@ -88,8 +74,8 @@
       -webkit-transform: rotate(200deg);
       -moz-transform: rotate(200deg);
       position: relative;
-      left: -190px;
       top: -320px;
+      left: -190px;
       z-index: -1;
     }
     .right {
@@ -101,8 +87,8 @@
       -webkit-transform: scaleY(-1) rotate(20deg);
       -moz-transform: scaleY(-1) rotate(20deg);
       position: relative;
-      left: 190px;
       top: -620px;
+      left: 190px;
       z-index: -1;
     }
     .foot {
