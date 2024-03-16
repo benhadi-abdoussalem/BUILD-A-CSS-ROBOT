@@ -13,4 +13,6 @@ Here i'm going to:
 2- The idea of "in front of" and "behind"in CSS.
 3- Writing CSS transforms to flip and retate elements.
 Part 3: Creating and Controlling animations with javascript.
-    
+In this part i will cover 2 main things:
+1: Build a button to control the robot's laser eyes.
+2: Begin writing a JavaScript program that generates random colors to help cotter dance all night!
