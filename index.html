@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
 <head>
-  <script src="/assets/jquery.js"></script>
   <link
     href="https://fonts.googleapis.com/css?family=Poller+One"
     rel="stylesheet"
     type="text/css"
   />
-
+  <script src="/assets/jquery.js"></script>
   <style>
     .robot {
       position: relative;
@@ -119,22 +118,24 @@
 
   <button class="flash">laser eyes on/off</button>
   <button class="color">change color!</button>
-
   <script>
-    // when eyes button is clicked, toggle laser class
+    // When eyes button is clicked, toggle laser class
     $(".flash").click(function () {
       $(".brain").toggleClass("laser");
     });
 
-    // when color button is clicked, pick a number 0-255
+    // When color button is clicked, generate an RGBA value
     $(".color").click(function () {
-      // Assign each namd color a random number 0-266
+      // Assign each color a random number 0-255
       var red = Math.floor(Math.random() * 255);
       var green = Math.floor(Math.random() * 255);
       var blue = Math.floor(Math.random() * 255);
 
-      // Display the number in an alert windows
-      alert(red + "," + green + "," + blue);
+      //Generate an RGBA value from red, green, and blue
+      var randomRGBA = "rgba(" + red + "," + green + "," + blue + ",1)";
+
+      //Display the RGBA values in an alert window
+      alert(randomRGBA);
     });
   </script>
 </body>
