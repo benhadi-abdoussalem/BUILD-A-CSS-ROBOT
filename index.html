@@ -102,6 +102,11 @@
       top: -10px;
       z-index: -1;
     }
+    img {
+      position: absolute;
+      top: 200px;
+      left: 400px;
+    }
   </style>
 </head>
 
@@ -118,6 +123,9 @@
 
   <button class="flash">laser eyes on/off</button>
   <button class="color">change color!</button>
+
+  <img src="/assets/dance_cotter.gif" />
+
   <script>
     // When eyes button is clicked, toggle laser class
     $(".flash").click(function () {
@@ -134,8 +142,10 @@
       //Generate an RGBA value from red, green, and blue
       var randomRGBA = "rgba(" + red + "," + green + "," + blue + ",1)";
 
+      // and change the body's background to our random color
+      $("body").css("background", randomRGBA);
       //Display the RGBA values in an alert window
-      alert(randomRGBA);
+      //alert(randomRGBA);
     });
   </script>
 </body>
