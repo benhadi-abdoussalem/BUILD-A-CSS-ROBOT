@@ -1,0 +1,20 @@
+repo_name: benhadi-abdoussalem/BUILD-A-CSS-ROBOT
+report_id: 7892eaede8f6a431f1f33775c7cee093
+version: 0.1
+repo_type: Public
+timestamp: '2024-03-23T00:45:27+00:00'
+requested_by: benhadi-abdoussalem
+provider: github
+branch: main
+detected_tools_count: 1
+tools:
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/benhadi-abdoussalem/BUILD-A-CSS-ROBOT
+  detection_source: Repo Metadata
